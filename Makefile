@@ -4,17 +4,17 @@
 # stephen.perkins@utdallas.edu
 #
 
-CXX = g++
+CXX = g++ -std=c++11
 CXXFLAGS =
 CPPFLAGS = -Wall -g -I/scratch/perkins/include
 LDFLAGS = -L/scratch/perkins/lib
 LDLIBS = -lcdk -lcurses
 
 # Executable Name
-EXECFILE = cdkexample
+EXECFILE = hw6exe
 
 # Auto include all .cc files
-SOURCES := $(wildcard *.cc)
+SOURCES := hw6main.cc  # $(wildcard *.cc)
 OBJS = $(SOURCES:.cc=.o)
 
 # Rely on implicit rules for compilation
