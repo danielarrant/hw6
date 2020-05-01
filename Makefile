@@ -14,7 +14,7 @@ LDLIBS = -lcdk -lcurses
 EXECFILE = hw6exe
 
 # Auto include all .cc files
-SOURCES := hw6main.cc  # $(wildcard *.cc)
+SOURCES := hw6main.cc aGreaterThanB.cc   # $(wildcard *.cc)
 OBJS = $(SOURCES:.cc=.o)
 
 # Rely on implicit rules for compilation
